@@ -1,4 +1,7 @@
+//external
 import React from 'react';
+import PropTypes from 'prop-types';
+// css
 import styles from './Button.scss';
 
 const Button = ({variant = '', ...otherProps}) => (
@@ -7,5 +10,8 @@ const Button = ({variant = '', ...otherProps}) => (
     className={styles.component + variant.split(' ').map(name => ' ' + (styles[name] || name)).join('')}
   />
 );
+Button.propTypes = {
+  variant: PropTypes.string,
+};
 
 export default Button;

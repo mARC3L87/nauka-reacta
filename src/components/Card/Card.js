@@ -6,15 +6,15 @@ import styles from './Card.scss';
 
 
 class Card extends React.Component {
-  static = {
-    title: PropTypes.node,
+  static propTypes = {
+    title: PropTypes.string.isRequired,
   }
   render() {
     return(
       <div className={styles.component}>
-         {this.props.title}
+        {this.props.title}
       </div>
-    )
+    );
   }
 }
 
