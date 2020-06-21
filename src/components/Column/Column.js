@@ -6,7 +6,7 @@ import styles from './Column.scss';
 //js
 import Card from '../Card/Card';
 import Creator from '../Creator/Creator';
-import Icon from './Icon';
+import Icon from '../Icon/Icon';
 //data
 import {settings} from '../../data/dataStore';
 
