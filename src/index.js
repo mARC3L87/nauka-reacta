@@ -6,7 +6,7 @@ import {Provider} from 'react-redux';
 import './styles/normalize.scss';
 import './styles/global.scss';
 //js
-import App from './components/App/AppContainer';
+import App from './components/App/App';
 //data
 import store from './redux/store';
 

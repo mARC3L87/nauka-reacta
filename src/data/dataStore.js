@@ -12,6 +12,19 @@ export const settings = {
   },
   defaultListDescription: '<p>I can do all the things!!!</p>',
   defaultColumnIcon: 'list-alt',
+  navigation: {
+    icon: 'frog',
+  },
+  info: {
+    title: 'Best info title ever',
+    description: 'Some lorem ipsum text added to info subpage',
+    image: 'src/components/Hero/trees.jpeg',
+  },
+  faq: {
+    title: 'Another great title',
+    description: '...and more lorem ipsum dolor la di da',
+    image: 'src/components/Hero/grass.jpeg',
+  },
 };
 
 export const pageContents = {
