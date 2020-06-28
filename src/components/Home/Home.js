@@ -4,8 +4,7 @@ import PropTypes from 'prop-types';
 //css
 import styles from './Home.scss';
 //js
-import List from '../List/ListContainer.js';
-import Search from '../Search/SearchContainer';
+import ListLink from '../ListLink/ListLink.js';
 //data
 
 class Home extends React.Component {
@@ -20,9 +19,8 @@ class Home extends React.Component {
       <main className={styles.component}>
         <h1 className={styles.title}>{title}</h1>
         <h2 className={styles.subtitle}>{subtitle}</h2>
-        <Search/>
         {lists.map(listData => (
-          <List key={listData.id} {...listData} />
+          <ListLink key={listData.id} {...listData} />
         ))}
       </main>
     );
